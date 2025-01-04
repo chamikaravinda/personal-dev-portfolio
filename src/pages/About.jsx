@@ -1,14 +1,26 @@
 import React from "react";
+import { motion } from "framer-motion";
 import project1 from "../assets/images/proj1.jpg";
 import project2 from "../assets/images/proj2.jpg";
 
 export default function About() {
   return (
     <section id="about" className="text-white p-8">
-      <h2 className="text-6xl font-bold mb-8">
-        About <span className="text-emerald-300"> Me</span>
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2 className="text-6xl font-bold mb-8">
+          About <span className="text-emerald-300"> Me</span>
+        </h2>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
         <div className="border border-white/20 rounded-lg p-6">
           <h3 className="text-2xl font-bold mb-2">01.Background</h3>
           <p className="text-white/50 mb-6">
@@ -74,8 +86,11 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }} className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <div className="border border-white/20 rounded-lg p-6">
           <div className="space-y-4">
             <div>
@@ -83,28 +98,34 @@ export default function About() {
                 Front-end
               </label>
               <div className="w-full bg-white/10 rounded-full h-2">
-                <div
+                <motion.div
+                  initial={{ width: "10%", opacity: 0 }}
+                  whileInView={{ width: "85%", opacity: 1 }}
+                  transition={{ duration: 1.5 }}
                   className="bg-emerald-300 h-2 rounded-full"
-                  style={{ width: "85%" }}
-                ></div>
+                ></motion.div>
               </div>
             </div>
             <div>
               <label className="block font-medium text-sm mb-1">Back-end</label>
               <div className="w-full bg-white/10 rounded-full h-2">
-                <div
+                <motion.div
+                  initial={{ width: "10%", opacity: 0 }}
+                  whileInView={{ width: "90%", opacity: 1 }}
+                  transition={{ duration: 1.5 }}
                   className="bg-emerald-300 h-2 rounded-full"
-                  style={{ width: "90%" }}
-                ></div>
+                ></motion.div>
               </div>
             </div>
             <div>
               <label className="block font-medium text-sm mb-1">Dev-Ops</label>
               <div className="w-full bg-white/10 rounded-full h-2">
-                <div
+                <motion.div
+                  initial={{ width: "10%", opacity: 0 }}
+                  whileInView={{ width: "85%", opacity: 1 }}
+                  transition={{ duration: 1.5 }}
                   className="bg-emerald-300 h-2 rounded-full"
-                  style={{ width: "75%" }}
-                ></div>
+                ></motion.div>
               </div>
             </div>
             <h3 className="text-2xl font-bold mt-4 mb-2">04. Approach</h3>
@@ -131,7 +152,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
