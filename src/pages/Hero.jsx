@@ -41,13 +41,13 @@ export default function Hero() {
             <div className="flex gap-4 justify-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-emerald-600 transition-colors"
+                className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-emerald-600 transition-colors z-50"
               >
                 Contact Me
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors"
+                className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors z-50"
               >
                 View Work
               </motion.button>
@@ -57,7 +57,7 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 15, 0] }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl"
+          className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl z-0"
         />
       </div>
     </div>
