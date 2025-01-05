@@ -29,11 +29,11 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="max-w-2xl"
           >
-            <h1 className="text-6xl md:text-7xl font-bold tracking-tighter mb-4 tracking-wide">
+            <h1 className="text-6xl md:text-7xl font-bold tracking-tighter mb-4 tracking-wide px-4">
               Hi, I am <br /> Chamika{" "}
               <span className="text-emerald-400">Jayathilaka</span>
             </h1>
-            <p className="text-xl text-white/80 max-w-lg mx-auto leading-relaxd mb-6">
+            <p className="text-xl text-white/80 max-w-lg mx-auto leading-relaxed mb-6 px-4">
               I am a fullstack developer with years of experience. I am
               passionate about building scalable and maintainable web
               applications.
